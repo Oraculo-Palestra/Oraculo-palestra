@@ -1,0 +1,96 @@
+<script>
+  function mostrarVideo(id) {
+    document.querySelectorAll('.player').forEach(p => {
+      p.style.display = 'none';
+    });
+
+    const actual = document.getElementById(id);
+    actual.style.display = 'block';
+  }
+</script>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Videos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+<div class="contenedor">
+  <h1>🎬 Musical</h1>
+
+ <div class="grid">
+
+  <div class="card">
+    <a class="img-btn" onclick="abrirVideo('videos/musical/musical1.mp4')">
+      <img src="imagenes/Videos/musical/music1.jpg">
+    </a>
+    <h3>Ingles</h3>
+  </div>
+
+  <div class="card">
+    <a class="img-btn" onclick="abrirVideo('videos/musical/musical2.mp4')">
+      <img src="imagenes/videos/musical/music2.jpg">
+    </a>
+    <h3>Portugues</h3>
+  </div>
+
+  </div>
+<div id="modal" class="modal">
+  <div class="modal-contenido">
+    <button class="modal-cerrar" onclick="cerrarModal()">✕</button>
+    <video id="modalVideo" controls autoplay></video>
+  </div>
+</div>
+
+
+</body>
+</html>
+<script>
+  const modal = document.getElementById("modal");
+  const modalVideo = document.getElementById("modalVideo");
+
+  function abrirVideo(src) {
+    modalVideo.src = src;
+    modal.classList.add("activo");
+    modalVideo.play();
+  }
+
+  function cerrarModal() {
+    modalVideo.pause();
+    modalVideo.src = "";
+    modal.classList.remove("activo");
+  }
+</script>

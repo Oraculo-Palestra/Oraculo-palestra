@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Audioteca</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body><script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+<div class="contenedor">
+  <h1>Temporada 2</h1>
+
+  <div class="grid">
+
+   <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>01</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/01.mp3">
+      </audio>
+    </div>
+
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>02</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/02.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>03</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/03.mp3">
+      </audio>
+    </div>
+    
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>04</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/04.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>05</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/05.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>06</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/06.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>07</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/07.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>08</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/08.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>09</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/09.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>10</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/10.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>11</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/11.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>12</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/12.mp3">
+      </audio>
+    </div>
+
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>13</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/13.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>14</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/14.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>15</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/15.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>16</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/16.mp3">
+      </audio>
+    </div>
+
+       <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>17</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/17.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>18</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/18.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>19</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/19.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost4.png">
+      </a>
+
+      <h3>20</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost4/20.mp3">
+      </audio>
+    </div>
+     	        	      
+</div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const audios = document.querySelectorAll(".audio-player");
+
+  audios.forEach(audio => {
+    audio.addEventListener("play", () => {
+
+      audios.forEach(otherAudio => {
+        if (otherAudio !== audio) {
+          otherAudio.pause();
+          otherAudio.currentTime = 0; // opcional
+        }
+      });
+
+    });
+  });
+
+});
+</script>
+
+
+</body>
+</html>

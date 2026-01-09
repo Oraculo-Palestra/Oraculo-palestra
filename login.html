@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar sesión</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f1a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background: #151a2e;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #1f4fff;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #4f7cff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="imagenes/logo.png"
+     alt="Logo"
+     style="width:240px; margin-bottom:20px;">
+
+    <h2>¿Quien nos visita?</h2>
+
+    <input type="text" id="username" placeholder="Usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      // 🔐 LOGIN SIMPLE (demo)
+      if (user === "Anmiel" && pass === "1234") {
+        localStorage.setItem("loggedIn", "true");
+        localStorage.setItem("user", user);
+        location.href = "index.html";
+      } else {
+        alert("Usuario o contraseña incorrectos");
+      }
+    }
+  </script>
+
+</body>
+</html>

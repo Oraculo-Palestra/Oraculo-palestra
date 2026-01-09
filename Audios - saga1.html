@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Audioteca</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+<div class="contenedor">
+  <h1>Percy Jackson y los heroes del Olimpo</h1>
+
+  <div class="grid">
+
+   <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/audios/saga1/audio1.png">
+      </a>
+
+      <h3>El Ladron del Rayo</h3>
+
+        <audio class="audio-player" controls>
+        <source src="Audios/saga1/Audio1.mp3">
+      </audio>
+    </div>
+
+ <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/audios/saga1/audio2.png">
+      </a>
+
+      <h3>El Mar de Monstruos</h3>
+
+        <audio class="audio-player" controls>
+        <source src="Audios/saga1/Audio2.mp3">
+      </audio>
+    </div>
+
+ <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/audios/saga1/audio3.png">
+      </a>
+
+      <h3>La Maldicion del Titan</h3>
+
+        <audio class="audio-player" controls>
+        <source src="Audios/saga1/Audio3.mp3">
+      </audio>
+    </div>
+
+ <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/audios/saga1/audio4.png">
+      </a>
+
+      <h3>La Batalla del Laberinto</h3>
+
+        <audio class="audio-player" controls>
+        <source src="Audios/saga1/Audio4.mp3">
+      </audio>
+    </div>
+
+ <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/audios/saga1/audio5.png">
+      </a>
+
+      <h3>El Ultimo Heroe del Olimpo</h3>
+
+        <audio class="audio-player" controls>
+        <source src="Audios/saga1/Audio5.mp3">
+      </audio>
+    </div>
+
+ <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/audios/saga1/audio6.png">
+      </a>
+
+      <h3>El caliz de los diioses</h3>
+
+        <audio class="audio-player" controls>
+        <source src="Audios/saga1/Audio6.mp3">
+      </audio>
+    </div>
+
+ <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/audios/saga1/audio7.png">
+      </a>
+
+      <h3>La Diosa de 3 Cabezas</h3>
+
+        <audio class="audio-player" controls>
+        <source src="Audios/saga1/Audio7.mp3">
+      </audio>
+    </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const audios = document.querySelectorAll(".audio-player");
+
+  audios.forEach(audio => {
+    audio.addEventListener("play", () => {
+
+      audios.forEach(otherAudio => {
+        if (otherAudio !== audio) {
+          otherAudio.pause();
+          otherAudio.currentTime = 0; // opcional
+        }
+      });
+
+    });
+  });
+
+});
+</script>
+
+
+</body>
+</html>

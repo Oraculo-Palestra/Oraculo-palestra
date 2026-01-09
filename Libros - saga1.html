@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>libroteca</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+ <script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Libros</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="contenedor">
+  <h1>📚Percy Jackson y los dioses del Olimpo</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <a class="img-btn" href="libros/Saga1/libro1.pdf" target="_blank">
+        <img src="imagenes/libros/Saga1/libro1.png">
+      </a>
+      <h3>El ladron del rayo</h3>
+    </div>
+
+    <div class="card">
+      <a class="img-btn" href="libros/Saga1/libro2.pdf" target="_blank">
+        <img src="imagenes/libros/Saga1/libro2.png">
+      </a>
+      <h3>El mar de los monstruos</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/Saga1/libro3.pdf" target="_blank">
+        <img src="imagenes/libros/Saga1/libro3.png">
+      </a>
+      <h3>La maldicion del titan</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/Saga1/libro4.pdf" target="_blank">
+        <img src="imagenes/libros/Saga1/libro4.png">
+      </a>
+      <h3>La batalla del Laberinto</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/Saga1/libro5.pdf" target="_blank">
+        <img src="imagenes/libros/Saga1/libro5.png">
+      </a>
+      <h3>El ultimo heroe del olimpo</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/Saga1/libro6.pdf" target="_blank">
+        <img src="imagenes/libros/Saga1/libro6.png">
+      </a>
+      <h3>El caliz de los dioses</h3>
+    </div>
+
+  <div class="card">
+      <a class="img-btn" href="libros/Saga1/libro7.pdf" target="_blank">
+        <img src="imagenes/libros/Saga1/libro7.png">
+      </a>
+      <h3>La diosa de 3 cabezas</h3>
+    </div>
+
+   <div class="card">
+      <a class="img-btn" href="libros/saga1/libro8.pdf" target="_blank">
+        <img src="imagenes/libros/Saga1/libro8.png">
+      </a>
+      <h3>PROXIMAMENTE</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga1/libro9.pdf" target="_blank">
+        <img src="imagenes/libros/saga1/libro9.png">
+      </a>
+      <h3>El archivo Semidios</h3>
+    </div>
+
+  <div class="card">
+      <a class="img-btn" href="libros/saga1/libro10.pdf" target="_blank">
+        <img src="imagenes/libros/saga1/libro10.png">
+      </a>
+      <h3>Dioses Griegos</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga1/libro11.pdf" target="_blank">
+        <img src="imagenes/libros/saga1/libro11.png">
+      </a>
+      <h3>Heroes Griegos</h3>
+    </div>
+
+  <div class="card">
+      <a class="img-btn" href="libros/saga1/libro12.pdf" target="_blank">
+        <img src="imagenes/libros/saga1/libro12.png">
+      </a>
+      <h3>Guida Definitiva</h3>
+    </div>
+<div class="card">
+      <a class="img-btn" href="libros/saga1/libro13.pdf" target="_blank">
+        <img src="imagenes/libros/saga1/libro13.png">
+      </a>
+      <h3>Cantante de Apolo</h3>
+    </div>
+
+  <div class="card">
+      <a class="img-btn" href="libros/saga1/libro14.pdf" target="_blank">
+        <img src="imagenes/libros/saga1/libro14.png">
+      </a>
+      <h3>Guia Clasificada</h3>
+    </div>
+ 
+<div class="card">
+      <a class="img-btn" href="libros/saga1/libro15.pdf" target="_blank">
+        <img src="imagenes/libros/saga1/libro15.png">
+      </a>
+      <h3>La Espada de Hades</h3>
+    </div>
+ 
+ 
+  </div>
+</div>
+
+</body>
+</html>

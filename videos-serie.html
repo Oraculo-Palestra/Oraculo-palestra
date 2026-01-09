@@ -1,0 +1,71 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Videos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+<div class="contenedor">
+  <h1>🎬 Serie</h1>
+
+  <div class="grid">
+
+    <a href="videos-serie-t1.html" class="card img-btn">
+      <img src="imagenes/videos/temp1/serie-t1.jpg">
+      <h3>Temporada 1</h3>
+    </a>
+
+    <a href="videos-serie-t2.html" class="card img-btn">
+      <img src="imagenes/videos/temp2/serie-t2.jpg">
+      <h3>Temporada 2</h3>
+    </a>
+
+    <a href="videos-serie-pod.html" class="card img-btn">
+      <img src="imagenes/videos/pod/pod.jpg">
+      <h3>Podcast</h3>
+    </a>
+
+    <a href="videos-serie-extras.html" class="card img-btn">
+      <img src="imagenes/videos/serie-extras/extras.jpg">
+      <h3>Extras</h3>
+    </a>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Videos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+<div class="contenedor posters-video">
+  <h1>🎬 Películas</h1>
+  <div class="grid">
+  
+    <a href="videos-peliculas.html" class="card img-btn">
+      <img src="imagenes/videos/peliculas.jpg">
+      <h3>Películas</h3>
+    </a>
+
+    <a href="videos-serie.html" class="card img-btn">
+      <img src="imagenes/videos/serie.jpg">
+      <h3>Serie</h3>
+    </a>
+
+    <a href="videos-Musical.html" class="card img-btn">
+      <img src="imagenes/videos/Musical.jpg">
+      <h3>Musical</h3>
+    </a>
+
+    <a href="videos-otros.html" class="card img-btn">
+      <img src="imagenes/videos/extra-vid.jpg">
+      <h3>EXTRAS</h3>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

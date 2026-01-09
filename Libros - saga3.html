@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>libroteca</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Libros</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="contenedor">
+  <h1>📚Las pruebas de Apolo</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <a class="img-btn" href="libros/saga3/libro1.pdf" target="_blank">
+        <img src="imagenes/libros/saga3/libro1.png">
+      </a>
+      <h3>El oraculo oculto</h3>
+    </div>
+
+    <div class="card">
+      <a class="img-btn" href="libros/saga3/libro2.pdf" target="_blank">
+        <img src="imagenes/libros/saga3/libro2.png">
+      </a>
+      <h3>La profecia oscura</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga3/libro3.pdf" target="_blank">
+        <img src="imagenes/libros/saga3/libro3.png">
+      </a>
+      <h3>El laberinto en llamas</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga3/libro4.pdf" target="_blank">
+        <img src="imagenes/libros/saga3/libro4.png">
+      </a>
+      <h3>La tumba del tirano</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga3/libro5.pdf" target="_blank">
+        <img src="imagenes/libros/saga3/libro5.png">
+      </a>
+      <h3>La torre de Neron</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga3/libro6.pdf" target="_blank">
+        <img src="imagenes/libros/saga3/libro6.png">
+      </a>
+      <h3>La Maldicion del campamento Jupiter</h3>
+    </div>
+   
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Plataforma</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<!-- ===== PROTECCIÓN LOGIN ===== -->
+<script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    location.href = "login.html";
+  }
+</script>
+
+<!-- ===== MENÚ ===== -->
+<nav class="menu">
+
+  <img src="imagenes/logo.png"
+       alt="Logo"
+       style="height:100px; margin-right:50px;">
+
+  <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+
+  <a href="index.html">Inicio</a>
+  <a href="audios.html">Audio Libros</a>
+  <a href="libros.html">Libros</a>
+  <a href="videos.html">Videos</a>
+  <a href="musica.html">Música</a>
+
+  <span id="userName" style="margin-left:20px;"></span>
+
+  <button onclick="logout()">Salir</button>
+
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-content">
+
+    <img src="imagenes/logo.png"
+         alt="Logo grande"
+         style="width:600px; margin-bottom:100px;">
+
+    <h1 id="welcomeText" style="font-size:42px; margin-bottom:15px;">
+      Bienvenido
+    </h1>
+
+    <p style="font-size:18px; opacity:0.9;">
+      Videos, audios, música y libros en un solo lugar
+    </p>
+
+  </div>
+</section>
+
+<!-- ===== ACCESOS PRINCIPALES ===== -->
+<section class="contenedor">
+  <div class="grid">
+
+    <a href="audios.html" class="card img-btn">
+      <img src="imagenes/home-audio.png" alt="Audios">
+      <h3>Audio Libros</h3>
+    </a>
+
+    <a href="libros.html" class="card img-btn">
+      <img src="imagenes/home-libros.png" alt="Libros">
+      <h3>Libros</h3>
+    </a>
+
+    <a href="videos.html" class="card img-btn">
+      <img src="imagenes/home-videos.png" alt="Videos">
+      <h3>Videos</h3>
+    </a>
+
+    <a href="musica.html" class="card img-btn">
+      <img src="imagenes/home-musica.png" alt="Música">
+      <h3>Música</h3>
+    </a>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="text-align:center; padding:30px; opacity:0.6;">
+  <p>© 2026 · Camp Half-Blood Palestra</p>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  function goBack() {
+    window.history.back();
+  }
+
+  function logout() {
+    localStorage.clear();
+    location.href = "login.html";
+  }
+
+  // Mostrar usuario y bienvenida
+  const user = localStorage.getItem("user");
+
+  if (user) {
+    const userSpan = document.getElementById("userName");
+    const welcome = document.getElementById("welcomeText");
+
+    if (userSpan) {
+      userSpan.textContent = "👤 " + user;
+    }
+
+    if (welcome) {
+      welcome.textContent = `Bienvenido, ${user}`;
+    }
+  }
+</script>
+
+</body>
+</html>

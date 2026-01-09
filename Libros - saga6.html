@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>libroteca</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Libros</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="contenedor">
+  <h1>📚Magnus Chase y los dioses de Asgard</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <a class="img-btn" href="libros/saga6/libro1.pdf" target="_blank">
+        <img src="imagenes/libros/saga6/libro1.png">
+      </a>
+      <h3>La espada del tiempo</h3>
+    </div>
+
+    <div class="card">
+      <a class="img-btn" href="libros/saga6/libro2.pdf" target="_blank">
+        <img src="imagenes/libros/saga6/libro2.png">
+      </a>
+      <h3>El martillo de Thor</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga6/libro3.pdf" target="_blank">
+        <img src="imagenes/libros/saga6/libro3.png">
+      </a>
+      <h3>El barco de los muertos</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga6/libro4.pdf" target="_blank">
+        <img src="imagenes/libros/saga6/libro4.png">
+      </a>
+      <h3>Los 9 mundos</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga6/libro5.pdf" target="_blank">
+        <img src="imagenes/libros/saga6/libro5.png">
+      </a>
+      <h3>Heroes Nordicos</h3>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

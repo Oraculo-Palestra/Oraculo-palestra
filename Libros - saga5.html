@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>libroteca</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Libros</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="contenedor">
+  <h1>📚La cronicas de los Kane</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <a class="img-btn" href="libros/saga5/libro1.pdf" target="_blank">
+        <img src="imagenes/libros/saga5/libro1.png">
+      </a>
+      <h3>La piramide roja</h3>
+    </div>
+
+    <div class="card">
+      <a class="img-btn" href="libros/saga5/libro2.pdf" target="_blank">
+        <img src="imagenes/libros/saga5/libro2.png">
+      </a>
+      <h3>El trono de fuego</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga5/libro3.pdf" target="_blank">
+        <img src="imagenes/libros/saga5/libro3.png">
+      </a>
+      <h3>La sombra de la serpiente</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga5/libro4.pdf" target="_blank">
+        <img src="imagenes/libros/saga5/libro4.png">
+      </a>
+      <h3>Magos y semidioses</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga5/libro5.pdf" target="_blank">
+        <img src="imagenes/libros/saga5/libro5.png">
+      </a>
+      <h3>Dioses Egipcios</h3>
+    </div>
+
+<div class="card">
+      <a class="img-btn" href="libros/saga5/libro6.pdf" target="_blank">
+        <img src="imagenes/libros/saga5/libro6.png">
+      </a>
+      <h3>Guia de supervivencia</h3>
+    </div>
+   
+  </div>
+</div>
+
+</body>
+</html>

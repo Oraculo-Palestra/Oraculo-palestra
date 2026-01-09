@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Musica OST</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+<div class="contenedor">
+  <h1>Musica</h1>
+
+  <div class="grid">
+
+    <a href="Musica - ost1.html" class="causicard img-btn">
+      <img src="imagenes/Musica/ost1.png">
+      <h3>El ladron del Rayo La pelicula</h3>
+    </a>
+
+    <a href="Musica - OST2.html" class="card img-btn">
+      <img src="imagenes/Musica/OST2.png">
+      <h3>El Mar de los monstruos La pelicula</h3>
+    </a>
+
+    <a href="Musica - OST3.html" class="card img-btn">
+      <img src="imagenes/Musica/OST3.png">
+      <h3>La serie Temporada 1</h3>
+    </a>
+
+    <a href="Musica - OST4.html" class="card img-btn">
+      <img src="imagenes/Musica/OST4.png">
+      <h3>La serie Temporada 2</h3>
+    </a>
+
+    <a href="Musica - OST5.html" class="card img-btn">
+      <img src="imagenes/Musica/OST5.png">
+      <h3>El musical</h3>
+    </a>
+
+    <a href="Musica - OST6.html" class="card img-btn">
+      <img src="imagenes/Musica/OST6.png">
+      <h3>El musical/instrumental</h3>
+    </a>
+
+    <a href="Musica - OST7.html" class="card img-btn">
+      <img src="imagenes/Musica/OST7.png">
+      <h3>El ladron del rayo DS GAME</h3>
+    </a>
+
+
+</div>
+
+</body>
+</html>

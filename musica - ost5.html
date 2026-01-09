@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Audioteca</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  location.href = "login.html";
+}
+</script>
+
+
+<nav class="menu">
+    <button onclick="goBack()" class="btn-back">⬅ Atrás</button>
+      <script>
+      function goBack() {
+         window.history.back();
+        }
+      </script>
+    <a href="index.html">Inicio</a>
+    <a href="audios.html">Audio Libros</a>
+    <a href="libros.html">Libros</a>
+    <a href="videos.html">Videos</a>
+    <a href="Musica.html">Musica</a>
+    <span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()">Salir</button>
+
+<script>
+function logout() {
+  localStorage.clear();
+  location.href = "login.html";
+}
+</script>
+
+
+</nav>
+
+<div class="contenedor">
+  <h1>El musical ingles</h1>
+
+  <div class="grid">
+
+   <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>01</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/01.mp3">
+      </audio>
+    </div>
+
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>02</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/02.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>03</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/03.mp3">
+      </audio>
+    </div>
+    
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>04</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/04.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>05</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/05.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>06</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/06.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>07</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/07.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>08</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/08.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>09</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/09.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>10</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/10.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>11</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/11.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>12</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/12.mp3">
+      </audio>
+    </div>
+
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>13</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/13.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>14</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/14.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>15</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/15.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>16</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/16.mp3">
+      </audio>
+    </div>
+
+       <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>17</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/17.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>18</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/18.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>19</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/19.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>20</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/20.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>21</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/21.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>22</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/22.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>23</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/23.mp3">
+      </audio>
+    </div>
+
+    <div class="card">
+      <a class="img-btn">
+        <img src="imagenes/musica/ost5.png">
+      </a>
+
+      <h3>24</h3>
+
+        <audio class="audio-player" controls>
+        <source src="musica/ost5/24.mp3">
+      </audio>
+    </div>
+     	        	      
+</div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const audios = document.querySelectorAll(".audio-player");
+
+  audios.forEach(audio => {
+    audio.addEventListener("play", () => {
+
+      audios.forEach(otherAudio => {
+        if (otherAudio !== audio) {
+          otherAudio.pause();
+          otherAudio.currentTime = 0; // opcional
+        }
+      });
+
+    });
+  });
+
+});
+</script>
+
+
+</body>
+</html>
